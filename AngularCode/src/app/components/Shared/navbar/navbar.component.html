@@ -1,0 +1,16 @@
+<nav class="py-2 bg-body-tertiary border-bottom">
+  <div class="container d-flex flex-wrap">
+    <ul class="nav me-auto">
+      <li class="nav-item "><a class="nav-link btn link-body-emphasis px-2" [routerLink]="['']" [routerLinkActive]="'bg-primary'" [routerLinkActiveOptions]="{exact:true}"  aria-current="page"><i class="bi bi-bank"></i> Home</a></li>
+      <li class="nav-item "><a class="nav-link btn link-body-emphasis px-2" [routerLink]="['product']" [routerLinkActive]="'bg-primary'">Product</a></li>
+      <li class="nav-item "><a class="nav-link btn link-body-emphasis px-2" [routerLink]="['orders']" [routerLinkActive]="'bg-primary'">Orders</a></li>
+      <li class="nav-item "><a class="nav-link btn link-body-emphasis px-2" [routerLink]="['contact']" [routerLinkActive]="'bg-primary'">Contact</a></li>
+      <li class="nav-item "><a class="nav-link btn link-body-emphasis px-2" [routerLink]="['About']" [routerLinkActive]="'bg-primary'">About</a></li>
+    </ul>
+    <ul class="nav">
+      <li class="nav-item"><a [routerLink]="['Login']" class="nav-link btn link-body-emphasis px-2" *ngIf="!checked()"><i class="bi bi-box-arrow-in-right"></i>  Login</a></li>
+      <li class="nav-item"><a class="nav-link btn link-body-emphasis px-2" *ngIf="checked()" (click)="data()"><i class="bi bi-box-arrow-in-left"></i> LogOut</a></li>
+      <li class="nav-item"><a class="nav-link btn link-body-emphasis px-2" [routerLink]="['signup']">Sign up <i class="bi bi-door-open-fill"></i></a></li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,37 @@
+<form action="" class="row g-3 m-3" [formGroup]="LoginForm" (submit)="Login($event)">
+  <div class="col-11">
+    <label for="username" class="form-label">User Name</label>
+    <input type="text" class="form-control " id="username" formControlName = "username"
+    [ngClass]="{
+      'is-valid':nameControl.valid && nameControl.touched,
+      'is-invalid':nameControl.invalid && nameControl.touched
+    }"  required>
+    <div class="valid-feedback">Looks good!</div>
+    <div class="invalid-feedback" *ngIf="nameControl.errors && nameControl.hasError('required')">User Name is Required</div>
+    </div>
+  <div class="col-11">
+    <label for="Email" class="form-label">Email</label>
+    <input type="text" class="form-control " id="Email" formControlName = "email"
+    [ngClass]="{
+      'is-valid':emailControl.valid && emailControl.touched,
+      'is-invalid':emailControl.invalid && emailControl.touched
+    }"  required>
+    <div class="valid-feedback">Looks good!</div>
+    <div class="invalid-feedback" *ngIf="emailControl.errors && emailControl.hasError('required')">Please provide a valid email.</div>
+    <div class="invalid-feedback" *ngIf="emailControl.errors && emailControl.hasError('email')">Email Must be contains @</div>
+  </div>
+  <div class="col-11">
+    <label for="Password" class="form-label">Password</label>
+    <input type="password" class="form-control " id="Password"  formControlName="password"
+    [ngClass]="{
+      'is-valid': passwordControl.valid && passwordControl.touched,
+      'is-invalid': passwordControl.invalid && passwordControl.touched
+    }"  required>
+    <div class="valid-feedback">Looks good!</div>
+    <div class="invalid-feedback">Please provide a valid password.</div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-outline-primary" type="submit" >Submit form</button>
+  </div>
+  <P class="btn btn-primary w-25" [routerLink]="['/Login']" >Are you Have Account?</P>
+</form>

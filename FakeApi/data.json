@@ -1,0 +1,124 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "HP Notebook",
+      "description": "Today's Combo Offer",
+      "productBrand": "Electronics",
+      "price": 15000,
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/12.webp"
+    },
+    {
+      "id": 2,
+      "name": "HP Envy",
+      "description": "Today's Combo Offer",
+      "productBrand": "Electronics",
+      "price": 12000,
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/4.webp"
+    },
+    {
+      "id": 3,
+      "name": "Toshiba B77",
+      "description": "Today's Combo Offer",
+      "productBrand": "Electronics",
+      "price": 25000,
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/5.webp"
+    },
+    {
+      "id": 4,
+      "name": "HP Envy",
+      "description": "Today's Combo Offer",
+      "productBrand": "Electronics",
+      "price": 30000,
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/5.webp"
+    },
+    {
+      "id": 5,
+      "name": "Tablet i 13",
+      "description": "Today's Combo Offer",
+      "productBrand": "Electronics",
+      "price": 40000,
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/2.webp"
+    },
+    {
+      "id": 6,
+      "name": "Samsung ",
+      "description": "Today's Combo Offer",
+      "price": 18000,
+      "productBrand": "Electronic",
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/13.webp"
+    },
+    {
+      "id": 7,
+      "name": "Hade Phone",
+      "description": "Today's Combo Offer",
+      "productBrand": "Electronic",
+      "price": 15000,
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/16.webp"
+    },
+    {
+      "id": 8,
+      "name": "Camira",
+      "description": "Today's Combo Offer",
+      "productBrand": "Electronic",
+      "price": 20000,
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/15.webp"
+    },
+    {
+      "id": 9,
+      "name": "Samsung TV",
+      "description": "Today's Combo Offer",
+      "productBrand": "Electronic",
+      "price": 25000,
+      "image": "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/14.webp"
+    },
+    {
+      "id": 10,
+      "name": "Hade Phone",
+      "description": "Today's Combo Offer",
+      "price": "2500",
+      "productBrand": "Electronic",
+      "image": "D:\\New folder\\1.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Nader",
+      "description": "our new iPhonee",
+      "price": "2500",
+      "productBrand": "adasdad",
+      "image": "C:\\fakepath\\241782764_2736180540013065_5891691027000368317_n.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "Ali",
+      "email": "Ali@gamil.com",
+      "password": 12345
+    },
+    {
+      "id": 2,
+      "username": "Nader",
+      "email": "Nader@gamil.com",
+      "password": 12345
+    },
+    {
+      "id": 3,
+      "email": "Adel@gmail.com",
+      "password": "12345",
+      "username": "Nader Mohamed"
+    },
+    {
+      "id": 4,
+      "email": "Username@gmail.com",
+      "password": "12345",
+      "username": "Nader mamdouh"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Phone"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+<h1 class="text-center">{{productId  ? 'Edit Product' : 'Add New Product'}}</h1>
+<form class="row g-3 m-5" [formGroup]="productForm" (submit)="GetData($event)">
+  <!-- Product Name  -->
+  <div class="col-11">
+    <label for="name" class="form-label">Product Name</label>
+    <input type="text" class="form-control" id="name" name="name" formControlName ="name"
+    [ngClass]="{
+      'is-valid':nameControl.valid && nameControl.touched,
+      'is-invalid':nameControl.invalid && nameControl.touched
+    }"
+    required>
+    <div class="valid-feedback">Looks good!</div>
+    <div class="invalid-feedback" *ngIf="nameControl.errors && nameControl.hasError('required')">name Must be Gretar Than 3 charaters</div>
+  </div>
+    <!-- Product Description  -->
+  <div class="col-11">
+    <label for="description" class="form-label">Description</label>
+    <input type="text" class="form-control" id="description" name="description"
+    [ngClass]="{
+      'is-valid':descriptionControl.valid && descriptionControl.touched,
+      'is-invalid':descriptionControl.invalid && descriptionControl.touched
+    }"
+    formControlName ="description"  required>
+    <div class="valid-feedback">Looks good!</div>
+    <div class="invalid-feedback" *ngIf="descriptionControl.errors && descriptionControl.hasError('required')">description Must be Gretar Than 5 charaters</div>
+  </div>
+    <!-- Product Price  -->
+  <div class="col-11">
+    <label for="price" class="form-label">Price</label>
+    <input type="text" class="form-control" id="price" name="price"
+    [ngClass]="{
+      'is-valid':priceControl.valid && priceControl.touched,
+      'is-invalid':priceControl.invalid && priceControl.touched
+    }"
+    formControlName ="price"  required>
+    <div class="valid-feedback">Looks good!</div>
+    <div class="invalid-feedback" *ngIf="priceControl.errors">Price Must be between (1000,50000)</div>
+  </div>
+    <!-- Product Brand  -->
+  <div class="col-11">
+    <label for="productBrand" class="form-label">Product Brand</label>
+    <input type="text" class="form-control" id="productBrand" name="productBrand"
+    [ngClass]="{
+      'is-valid':productBrandControl.valid && productBrandControl.touched,
+      'is-invalid':productBrandControl.invalid && productBrandControl.touched
+    }"
+    formControlName ="productBrand"  required>
+    <div class="valid-feedback">Looks good!</div>
+    <div class="invalid-feedback" *ngIf="productBrandControl.errors && productBrandControl.hasError('required')">ProductBrand Must be GRetar Than 5 character</div>
+  </div>
+    <!-- Product image  -->
+  <div class="col-11">
+    <label for="image" class="form-label">Product image</label>
+    <input type="file" class="form-control" id="productBrand" name="image"
+    [ngClass]="{
+      'is-valid':imageControl.valid && imageControl.touched,
+      'is-invalid':imageControl.invalid && imageControl.touched
+    }"
+    formControlName ="image"  required>
+    <div class="valid-feedback">Looks good!</div>
+    <div class="invalid-feedback" *ngIf="imageControl.errors && imageControl.hasError('required')">Must be add image to this Product</div>
+  </div>
+
+  <div class="col-11">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>

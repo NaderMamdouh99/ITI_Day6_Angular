@@ -1,0 +1,33 @@
+<div class="btn btn-outline-primary m-2" [routerLink]="['new']">Add Product</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">ProductBrand</th>
+      <th scope="col">Price</th>
+      <th scope="col">Details</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let prod of Products let i = index">
+      <th scope="row">{{i+1}}</th>
+      <td>{{prod.name}}</td>
+      <td>{{prod.description}}</td>
+      <td>{{prod.productBrand}}</td>
+      <td>{{prod.price}}</td>
+      <td>
+        <i class="bi  fs-6 bi-info-square btn btn-outline-primary" [routerLink]="['details',prod.id]"> Details</i>
+      </td>
+      <td>
+        <i class="bi  fs-6 bi-pencil-square btn btn-outline-warning" [routerLink]="['edit',prod.id]"> Edit</i>
+      </td>
+      <td>
+        <i class="bi  fs-6 bi-trash btn btn-outline-danger" (click)="Delete(prod.id)"> Delete</i>
+      </td>
+    </tr>
+  </tbody>
+</table>

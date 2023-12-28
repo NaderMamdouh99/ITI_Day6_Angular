@@ -1,0 +1,12 @@
+<div class="card m-2">
+    <div class="card-header">
+      {{Product?.name}}
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{Product?.description}}</li>
+      <li class="list-group-item">{{Product?.productBrand}}</li>
+      <li class="list-group-item">{{Product?.price}}</li>
+    </ul>
+</div>
+<div class="btn btn-outline-primary m-2" [routerLink]="['/product']">Back To Products</div>
+
